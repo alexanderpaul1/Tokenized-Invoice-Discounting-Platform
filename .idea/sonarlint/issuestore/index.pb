@@ -7,3 +7,5 @@ R
 "tests/invoice-verification.test.ts,8/e/8e58b1d3a6898b5a6467dfbc033f09aaae8e0a6e
 K
 contracts/tokenization.clar,e/4/e4fc7db3309f8d0ec224eefbe8db7c136be98fe4
+J
+tests/tokenization.test.ts,a/4/a4413714773c2f04f11a0d0e1e74e137e316eeb7

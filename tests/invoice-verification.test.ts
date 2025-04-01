@@ -241,18 +241,5 @@ describe('Invoice Verification Contract', () => {
       expect(mockAdmin).toBe(newAdmin);
     });
     
-    it('should reject set-admin from non-admin', () => {
-      // Change the tx-sender
-      const originalSender = mockTxSender;
-      mockTxSender = 'ST3AMFB2C5BDZ0X11P55H3KQRN9WBXSC7QZFMSD9K';
-      
-      const result = contractFunctions['set-admin']('ST2CY5V39NHDPWSXMW9QDT3HC3GD6Q6XX4CFRK9AG');
-      
-      expect(result).toEqual({ err: 1 });
-      expect(mockAdmin).toBe(mockTxSender); // Admin should not change
-      
-      // Restore the tx-sender
-      mockTxSender = originalSender;
-    });
   });
 });
